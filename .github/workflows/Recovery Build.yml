@@ -21,12 +21,17 @@ on:
         default: ''
         type: choice
         options:
+        - https://github.com/nitheshd30/OFRP-device_nothing_Spacewar.git
         - https://github.com/nitheshd30/android_device_nothing_Spacewar.git
         - https://dumps.tadiphone.dev/dumps/nothing/spacewar.git
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
         default: 'Spacewar-test'
+        type: choice
+        options:
+        - main
+        - master
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
@@ -45,6 +50,9 @@ on:
         description: 'MAKEFILE_NAME'
         required: true
         default: 'omni_Spacewar'
+        type: choice
+        options:
+        - twrp_Spacewar
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
